@@ -1,4 +1,5 @@
 from .common import *
+import dj_database_url
 
 # Override common.py here for production
 
@@ -24,12 +25,5 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # MySQL Database
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'khourypermitwebsite',
-        'HOST': 'khourybuildingpermits.com',
-        'PORT': '3306',
-        'USER': os.environ.get("DB_USER"),
-        'PASSWORD': os.environ.get("DB_PASSWORD"),
-    }
+    'default': dj_database_url.config()
 }
