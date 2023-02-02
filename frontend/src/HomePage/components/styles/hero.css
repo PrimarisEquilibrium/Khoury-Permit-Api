@@ -1,0 +1,43 @@
+.hero-container {
+    position: relative;
+    height: calc(100vh - 55px);
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+}
+
+.hero-img {
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.hero-text {
+    color: white;
+    font-size: 50px;
+    width: 50%;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+}
+
+@media (max-width: 1300px) {
+    .hero-text {
+        font-size: 40px;
+    }    
+}
+
+@media (max-width: 800px) {
+    .hero-text {
+        font-size: 30px;
+    }    
+}
+
+@media (max-width: 500px) {
+    .hero-text {
+        font-size: 30px;
+        width: 70%;
+    }    
+}

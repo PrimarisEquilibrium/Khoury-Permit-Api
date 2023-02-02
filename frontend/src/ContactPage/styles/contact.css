@@ -1,0 +1,117 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    background: url("https://images.unsplash.com/photo-1610733099270-0960608da9fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.contact-background-img {
+    z-index: -1;
+    position: absolute;
+}
+
+.contact-header {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.contact-subheader {
+    color: white;
+    font-size: 28px;
+}
+
+.contact-body {
+    margin-top: 20px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.contact-fields {
+    padding: 20px;
+}
+
+.general-info {
+    display: flex;
+    column-gap: 20px;
+}
+
+.message-field {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contact-info {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+input, textarea {
+    padding: 15px;
+    width: 100%;
+}
+
+.submit-btn {
+    margin-top: 16px;
+    padding: 12px 40px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: opacity 0.1s;
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
+}
+
+.submit-btn:active {
+    opacity: 0.6;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.contact-info-header {
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+}
+
+.email-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1050px) {
+    .contact-body {
+        flex-direction: column;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-container {
+        height: 100%;
+    }
+}
