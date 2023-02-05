@@ -5,10 +5,12 @@ import dj_database_url
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["khourypermit-api.herokuapp.com"]
+ALLOWED_HOSTS = [
+    "khourypermit-api.herokuapp.com",
+]
 
 CORS_ALLOWED_ORIGINS = [
-    "khourybuildingpermits.com",
+    "https://khourybuildingpermits.com",
     "http://localhost:3000"
 ]
 
@@ -28,7 +30,7 @@ AWS_DEFAULT_ACL = None
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
-# MySQL Database | ClearDB MySQL Provision
+# MySQL Database | JawsDB MySQL Provision
 DATABASES = {
     'default': dj_database_url.config()
 }
