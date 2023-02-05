@@ -2,5 +2,4 @@
 /staticfiles/
 
 db.sqlite3
-Pipfile.lock
 .env
