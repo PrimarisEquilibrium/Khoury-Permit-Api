@@ -5,7 +5,7 @@ from django.urls import reverse
 from .models import Project, ProjectItem, Category
 
 
-admin.site.site_header = "Khoury Designs And Permit Drawings Admin Panel"
+admin.site.site_header = "Khoury Design And Permit Drawings Admin Panel"
 
 
 class ProjectItemInline(admin.TabularInline):

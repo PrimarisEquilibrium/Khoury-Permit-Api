@@ -1,12 +1,13 @@
 import requests
 import os
+
 from rest_framework.generics import ListAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from django.core.mail import send_mail
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from django.core.mail import send_mail
 
 from .serializers import ProjectSerializer, CategorySerializer, EmailSerializer
 from .models import Project, Category
