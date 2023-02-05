@@ -27,21 +27,22 @@ AWS_DEFAULT_ACL = None
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
-# MySQL Database
+# MySQL Database | ClearDB MySQL Provision
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'khourypermitwebsite',
-        'HOST': 'khourypermitapi.herokuapp.com',
-        'PORT': '3306',
-        'USER': os.environ.get("DB_USER"),
-        'PASSWORD': os.environ.get("DB_PASSWORD"),
-    }
+    'default': dj_database_url.config()
 }
 
 
+# Removes Browsable API View
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',
     )
 }
+
+
+# Mailgun SMTP Server
+EMAIL_HOST = os.environ.get("MAILGUN_SMTP_SERVER")
+EMAIL_HOST_USER = os.environ.get("MAILGUN_SMTP_LOGIN")
+EMAIL_HOST_PASSWORD = os.environ.get("MAILGUN_SMTP_PASSWORD")
+EMAIL_PORT = os.environ.get("MAILGUN_SMTP_PORT")
