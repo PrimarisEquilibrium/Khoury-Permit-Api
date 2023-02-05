@@ -1,1 +1,1 @@
-web: waitress-serve khourypermit-api.wsgi
+web: gunicorn khourypermit-api.wsgi --log-file -
