@@ -43,7 +43,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'khourypermitapp.urls'
+ROOT_URLCONF = 'khourypermit-api.urls'
 
 TEMPLATES = [
     {
@@ -63,7 +63,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'khourypermitapp.wsgi.application'
+WSGI_APPLICATION = 'khourypermit-api.wsgi.application'
 
 
 # Password validation
@@ -101,10 +101,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
-STATICFILES_DIRS = [
-    BASE_DIR / "frontend/build/static"
-]
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 

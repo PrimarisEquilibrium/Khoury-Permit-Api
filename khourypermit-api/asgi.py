@@ -1,5 +1,5 @@
 """
-ASGI config for khourypermitapp project.
+ASGI config for khourypermit-api project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,7 +11,7 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermitapp.settings.dev')
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermitapp.settings.prod')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermit-api.settings.dev')
+# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermit-api.settings.prod')
 
 application = get_asgi_application()

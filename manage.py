@@ -6,8 +6,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermitapp.settings.dev')
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermitapp.settings.prod')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermit-api.settings.dev')
+    # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermit-api.settings.prod')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

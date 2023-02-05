@@ -1,5 +1,5 @@
 """
-WSGI config for khourypermitapp project.
+WSGI config for khourypermit-api project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermitapp.settings.dev')
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermitapp.settings.prod')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermit-api.settings.dev')
+# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'khourypermit-api.settings.prod')
 
 application = get_wsgi_application()
