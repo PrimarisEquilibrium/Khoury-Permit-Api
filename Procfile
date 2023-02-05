@@ -1,1 +1,1 @@
-web: gunicorn khourypermit-api.wsgi --log-file -
+web: waitress-serve --listen=*:8000 khourypermit-api.wsgi:application

@@ -17,7 +17,6 @@ mysqlclient = "*"
 whitenoise = "*"
 dj-database-url = "==0.5.0"
 waitress = "*"
-gunicorn = "==20.0.4"
 
 [dev-packages]
 
