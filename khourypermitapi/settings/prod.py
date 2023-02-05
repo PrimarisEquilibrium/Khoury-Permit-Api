@@ -9,6 +9,10 @@ ALLOWED_HOSTS = [
     "khourypermit-api.herokuapp.com",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'khourypermit-api.herokuapp.com'
+]
+
 CORS_ALLOWED_ORIGINS = [
     "https://khourybuildingpermits.com",
     "http://localhost:3000"
