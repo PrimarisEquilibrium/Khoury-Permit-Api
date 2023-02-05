@@ -5,7 +5,7 @@ import dj_database_url
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["khourypermitapi.herokuapp.com"]
+ALLOWED_HOSTS = ["khourypermit-api.herokuapp.com"]
 
 CORS_ALLOWED_ORIGINS = [
     "khourybuildingpermits.com"
