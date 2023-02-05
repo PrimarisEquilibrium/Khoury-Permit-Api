@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT khourypermit-api.wsgi:application
+web: waitress-serve --port=$PORT khourypermitapi.wsgi:application

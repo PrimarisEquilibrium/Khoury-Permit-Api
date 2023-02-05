@@ -43,7 +43,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'khourypermit-api.urls'
+ROOT_URLCONF = 'khourypermitapi.urls'
 
 TEMPLATES = [
     {
@@ -63,7 +63,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'khourypermit-api.wsgi.application'
+WSGI_APPLICATION = 'khourypermitapi.wsgi.application'
 
 
 # Password validation

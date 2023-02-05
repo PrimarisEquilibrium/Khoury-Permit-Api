@@ -5,7 +5,7 @@ import dj_database_url
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["khourypermit-api.herokuapp.com"]
+ALLOWED_HOSTS = ["khourypermitapi.herokuapp.com"]
 
 CORS_ALLOWED_ORIGINS = [
     "khourybuildingpermits.com"
@@ -32,7 +32,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'khourypermitwebsite',
-        'HOST': 'khourypermit-api.herokuapp.com',
+        'HOST': 'khourypermitapi.herokuapp.com',
         'PORT': '3306',
         'USER': os.environ.get("DB_USER"),
         'PASSWORD': os.environ.get("DB_PASSWORD"),
