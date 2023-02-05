@@ -1,1 +1,1 @@
-web: waitress-serve --listen=*:8000 khourypermit-api.wsgi:manage.py
+web: waitress-serve --port=$PORT khourypermit-api.wsgi:application
