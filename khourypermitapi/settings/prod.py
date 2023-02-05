@@ -10,7 +10,7 @@ ALLOWED_HOSTS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'khourypermit-api.herokuapp.com'
+    "https://khourypermit-api.herokuapp.com"
 ]
 
 CORS_ALLOWED_ORIGINS = [
