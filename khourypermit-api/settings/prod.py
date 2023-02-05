@@ -5,7 +5,11 @@ import dj_database_url
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["khourybuildingpermits.com"]
+ALLOWED_HOSTS = ["khourypermit-api.herokuapp.com"]
+
+CORS_ALLOWED_ORIGINS = [
+    "khourybuildingpermits.com"
+]
 
 # Production Apps
 PROD_APPS = [
@@ -25,5 +29,12 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # MySQL Database
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'khourypermitwebsite',
+        'HOST': 'khourypermit-api.herokuapp.com',
+        'PORT': '3306',
+        'USER': os.environ.get("DB_USER"),
+        'PASSWORD': os.environ.get("DB_PASSWORD"),
+    }
 }
