@@ -7,6 +7,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "khourypermit-api.herokuapp.com",
+    "localhost:3000"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
