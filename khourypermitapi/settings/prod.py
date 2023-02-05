@@ -9,7 +9,7 @@ ALLOWED_HOSTS = ["khourypermit-api.herokuapp.com"]
 
 CORS_ALLOWED_ORIGINS = [
     "khourybuildingpermits.com",
-    "localhost:3000"
+    "http://localhost:3000"
 ]
 
 # Production Apps
