@@ -18,6 +18,7 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = ['*']
 
 CORS_ALLOWED_ORIGINS = [
+    "http://khourybuildingpermits.com",
     "https://khourybuildingpermits.com",
     "https://khourypermit-frontend.herokuapp.com",
     "http://localhost:3000",
@@ -54,6 +55,7 @@ REST_FRAMEWORK = {
 
 
 # Mailgun SMTP Server
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = os.environ.get("MAILGUN_SMTP_SERVER")
 EMAIL_HOST_USER = os.environ.get("MAILGUN_SMTP_LOGIN")
 EMAIL_HOST_PASSWORD = os.environ.get("MAILGUN_SMTP_PASSWORD")
