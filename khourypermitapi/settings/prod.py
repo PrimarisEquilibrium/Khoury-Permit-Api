@@ -19,6 +19,7 @@ CORS_ALLOW_HEADERS = ['*']
 
 CORS_ALLOWED_ORIGINS = [
     "https://khourybuildingpermits.com",
+    "https://khourypermit-frontend.herokuapp.com",
     "http://localhost:3000",
 ]
 
